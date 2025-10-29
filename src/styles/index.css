@@ -9,3 +9,65 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+/* Estilos Globales (Para index.html o el contenedor principal) */
+body {
+    background-color: #000000; /* Fondo negro */
+}
+
+/* ------------------------------------------------------------- */
+/* Estilos para el Componente Home (Contenedor de todos los Digitales) */
+/* ------------------------------------------------------------- */
+
+/* Contenedor principal de tu Home.js */
+/* Asume que el <div> de tu componente Home tendrá la clase 'six-digit-counter' */
+.six-digit-counter {
+    display: flex; /* Para que todos los Digital estén en fila */
+    justify-content: center; /* Centrar el contador en la página */
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Fondo negro */
+}
+
+/* ------------------------------------------------------------- */
+/* Estilos para el Componente Digital */
+/* ------------------------------------------------------------- */
+
+/* Estilo para cada módulo de dígito o icono */
+.digital-unit {
+    /* Define el tamaño del módulo */
+    width: 100px; 
+    height: 120px;
+    
+    /* Apariencia del módulo */
+    background-color: #1a1a1a; /* Un gris muy oscuro para el fondo del dígito */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    margin: 5px; /* Espacio entre los módulos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil para profundidad */
+    
+    /* Centrar el contenido (el número o el icono) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Estilo del contenido (número o icono) */
+    color: #ffffff; /* Texto/Icono blanco */
+    font-size: 80px; /* Tamaño de fuente grande para los números */
+    font-family: Arial, sans-serif; /* Puedes usar un font más 'digital' si quieres */
+    font-weight: bold;
+}
+
+/* Ajuste específico para el icono de Font Awesome si es necesario */
+/* Esto asegura que el icono tenga el mismo tamaño y color que los números */
+.digital-unit .svg-inline--fa {
+    font-size: 80px; /* Asegura el tamaño del icono */
+    color: #ffffff;
+}
+
+/* Ajuste para el dígito de las unidades si tiene un diseño diferente (como el '2' en tu imagen) */
+/* Si el último dígito tiene un icono diferente o un color sutilmente distinto, puedes usar :last-child */
+/*
+.digital-unit:last-child {
+    background-color: #2a2a2a; 
+    border: 2px solid #333;
+}
+*/
